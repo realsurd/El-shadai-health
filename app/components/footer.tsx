@@ -7,7 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const links = {
   Services: ['Household Duties', 'Daily Living Activities', 'Instrumental Activities', 'Transportation', 'Medication Management', 'Family Caregiver Program'],
-  States: ['Pennsylvania', 'Connecticut', 'New Jersey', 'Missouri'],
+  // States: ['Pennsylvania', 'Connecticut', 'New Jersey', 'Missouri'],
   Company: ['About Us', 'Caregiver Careers', 'FAQ', 'Blog', 'Privacy Policy', 'Terms of Service'],
 };
 
@@ -37,7 +37,7 @@ export default function Footer() {
               </a>
               <div className="flex items-start gap-3 text-sm">
                 <MapPin className="w-4 h-4 text-sky-500 flex-shrink-0 mt-0.5" />
-                TX
+                Houston, TX
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function Footer() {
 
         <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-xs">
-            © {new Date().getFullYear()} Emerest Health LLC. All rights reserved.
+            © {new Date().getFullYear()} El-Shadai Health and Home Care.
           </p>
           <div className="flex items-center gap-3">
             {[FaFacebook, FaXTwitter, FaLinkedin, FaInstagram].map((Icon, i) => (
