@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 const trustBadges = [
-  { icon: Users, value: "10,000+", label: "Families Served" },
+  { icon: Users, value: "1000+", label: "Families Served" },
   { icon: Star, value: "5-Star", label: "Rated Service" },
   { icon: Shield, value: "Licensed", label: "Caregivers" },
 ];
@@ -132,14 +132,17 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-wrap gap-3 mb-10">
-              <a
-                href="tel:+17138001234"
-                className="btn-primary flex items-center gap-2"
+              <Link
+                href="tel:+12817016053"
+                className="bg-[#E91E63] py-3 px-5 rounded-2xl flex items-center gap-2"
               >
                 <Phone className="w-4 h-4" />
                 Call Now
-              </a>
-              <Link href="/contact-us" className="btn-outline">
+              </Link>
+              <Link
+                href="/contact-us"
+                className="bg-white py-3 px-5 rounded-2xl flex items-center gap-2 border border-[#E91E63] text-[#E91E63]"
+              >
                 Get Free Consultation
               </Link>
             </div>
@@ -198,7 +201,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               { value: "10+", label: "Years of Experience" },
-              { value: "10,000+", label: "Clients Served" },
+              { value: "1000+", label: "Clients Served" },
               { value: "5-Star", label: "Average Rating" },
               { value: "100%", label: "Licensed Caregivers" },
             ].map((stat) => (
@@ -220,8 +223,10 @@ export default function HomePage() {
       <section className="py-20 bg-[#FFF5F8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="section-subtitle">What We Offer</p>
-            <h2 className="section-title mb-4">
+            <p className="text-2xl  text-[#E91E63] leading-tight">
+              What We Offer
+            </p>
+            <h2 className="text-4xl font-bold text-[#1A2B4A] leading-tight mb-4">
               Comprehensive Home Care Services
             </h2>
             <p className="text-[#4A5568] max-w-xl mx-auto">
@@ -233,7 +238,10 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
             {services.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="card group cursor-pointer">
+              <div
+                key={title}
+                className="group cursor-pointer bg-white rounded-2xl p-6 border border-gray-100 hover:border-[#F48FB1] transition-all duration-300 shadow-[0_2px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_24px_rgba(233,30,99,0.10)]"
+              >
                 <div className="w-12 h-12 bg-[#FCE4EC] rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#E91E63] transition-colors">
                   <Icon className="w-6 h-6 text-[#E91E63] group-hover:text-white transition-colors" />
                 </div>
@@ -246,7 +254,7 @@ export default function HomePage() {
           <div className="text-center">
             <Link
               href="/services"
-              className="btn-primary inline-flex items-center gap-2"
+              className="bg-[#E91E63] text-white px-7 py-3 rounded-full font-semibold text-sm tracking-wide hover:bg-[#D81B60] transition-all duration-200 shadow-md hover:shadow-lg active:scale-95 inline-block inline-flex items-center gap-2"
             >
               View All Services
               <ArrowRight className="w-4 h-4" />
@@ -260,8 +268,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="section-subtitle">Why El Shadai</p>
-              <h2 className="section-title mb-6">
+              <p className="text-[#E91E63] text-xs font-semibold uppercase tracking-widest mb-2">
+                Why El Shadai
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1A2B4A] leading-tight mb-6">
                 A Name Families Trust in Houston
               </h2>
               <p className="text-[#4A5568] mb-8 leading-relaxed">
@@ -305,7 +315,7 @@ export default function HomePage() {
                   "Exceptional care, always."
                 </p>
                 <p className="text-white/70 text-xs mt-1">
-                  — Houston Family, 2024
+                  — Houston Family, 2026
                 </p>
               </div>
             </div>
@@ -317,8 +327,12 @@ export default function HomePage() {
       <section className="py-20 bg-[#FFF5F8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="section-subtitle">Testimonials</p>
-            <h2 className="section-title mb-4">What Families Are Saying</h2>
+            <p className="text-[#E91E63] text-xs font-semibold uppercase tracking-widest mb-2">
+              Testimonials
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A2B4A] leading-tight mb-4">
+              What Families Are Saying
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -355,7 +369,7 @@ export default function HomePage() {
           <div className="text-center">
             <Link
               href="/contact-us"
-              className="btn-outline inline-flex items-center gap-2"
+              className="border-2 border-[#E91E63] text-[#E91E63] px-7 py-3 rounded-full font-semibold text-sm tracking-wide hover:bg-[#E91E63] hover:text-white transition-all duration-200 active:scale-95 inline-block inline-flex items-center gap-2"
             >
               Share Your Experience <ChevronRight className="w-4 h-4" />
             </Link>
@@ -375,8 +389,8 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:+17138001234"
-              className="btn-white flex items-center gap-2"
+              href="tel:+12817016053"
+              className="bg-white text-[#E91E63] px-7 py-3 rounded-full font-semibold text-sm tracking-wide hover:bg-[#FFF5F8] transition-all duration-200 shadow-md hover:shadow-lg active:scale-95 flex items-center gap-2"
             >
               <Phone className="w-4 h-4" />
               Call Now

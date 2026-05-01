@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Phone, MapPin, Clock, CheckCircle, Mail } from "lucide-react";
+import Link from "next/link";
 
 const services = [
   "Personal Care",
@@ -54,8 +55,10 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="bg-[#FFF5F8] pt-32 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="section-subtitle">Contact Us</p>
-          <h1 className="section-title text-5xl mb-5">
+          <p className="text-[#E91E63] text-xs font-semibold uppercase tracking-widest mb-2">
+            Contact Us
+          </p>
+          <h1 className=" text-3xl md:text-4xl font-bold text-[#1A2B4A] leading-tight text-5xl mb-5">
             We'd Love to Hear From You
           </h1>
           <p className="text-[#4A5568] max-w-xl mx-auto text-lg">
@@ -136,7 +139,7 @@ export default function ContactPage() {
                             value={form.phone}
                             onChange={handleChange}
                             required
-                            placeholder="(713) 555-0100"
+                            placeholder="(281) 701-6053"
                             className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1A2B4A] placeholder-gray-400 focus:outline-none focus:border-[#E91E63] focus:ring-2 focus:ring-[#FCE4EC] transition-all"
                           />
                         </div>
@@ -226,13 +229,13 @@ export default function ContactPage() {
                   Our care coordinators are available to speak with you
                   directly. Call us now for immediate assistance.
                 </p>
-                <a
+                <Link
                   href="tel:+17138001234"
                   className="flex items-center gap-3 bg-white text-[#E91E63] px-6 py-4 rounded-2xl font-bold text-lg hover:bg-[#FFF5F8] transition-colors w-full sm:w-auto justify-center sm:justify-start"
                 >
                   <Phone className="w-5 h-5" />
-                  (713) 800-1234
-                </a>
+                  (281) 701-6053
+                </Link>
               </div>
 
               {/* Info cards */}
@@ -266,12 +269,12 @@ export default function ContactPage() {
                   <h4 className="font-semibold text-[#1A2B4A] text-sm mb-1">
                     Phone
                   </h4>
-                  <a
-                    href="tel:+17138001234"
+                  <Link
+                    href="tel:+12817016053"
                     className="text-[#E91E63] text-sm font-semibold hover:underline"
                   >
-                    (713) 800-1234
-                  </a>
+                    (281) 701-6053
+                  </Link>
                   <p className="text-[#718096] text-xs mt-0.5">
                     24/7 for emergencies
                   </p>
@@ -284,12 +287,12 @@ export default function ContactPage() {
                   <h4 className="font-semibold text-[#1A2B4A] text-sm mb-1">
                     Email
                   </h4>
-                  <a
-                    href="mailto:info@elshadaicare.com"
+                  <Link
+                    href="mailto:elshadihh1407@gmail.com"
                     className="text-[#E91E63] text-sm font-semibold hover:underline break-all"
                   >
-                    info@elshadaicare.com
-                  </a>
+                    elshadihh1407@gmail.com
+                  </Link>
                   <p className="text-[#718096] text-xs mt-0.5">
                     We reply within 24 hours
                   </p>

@@ -39,26 +39,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div
-              className={`w-9 h-9 rounded-full flex items-center justify-center transition-colors duration-300 ${solidBg ? "bg-white/20" : "bg-[#E91E63]/10"}`}
-            >
-              <Heart
-                className={`w-5 h-5 transition-colors duration-300 ${solidBg ? "text-white" : "text-[#E91E63]"}`}
-                fill="currentColor"
-              />
-            </div>
-            <div>
-              <span
-                className={`font-bold text-base leading-tight block transition-colors duration-300 ${solidBg ? "text-white" : "text-[#1A2B4A]"}`}
-              >
-                El Shadai
-              </span>
-              <span
-                className={`text-xs leading-tight block transition-colors duration-300 ${solidBg ? "text-white/80" : "text-[#E91E63]"}`}
-              >
-                Health & Home Care
-              </span>
-            </div>
+            <img
+              src="https://res.cloudinary.com/du153mzwk/image/upload/v1777548439/WhatsApp_Image_2026-04-28_at_8.38.27_PM_xsjajc.jpg"
+              alt="El-Shadia Logo"
+              className="w-15 h-15 rounded-full transition-transform duration-300 group-hover:scale-110"
+            />
           </Link>
 
           {/* Desktop nav */}
@@ -87,7 +72,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <Link
-            href="tel:+17138001234"
+            href="tel:+12817016053"
             className={`hidden md:flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 ${
               solidBg
                 ? "bg-white text-[#E91E63] hover:bg-[#FFF5F8] shadow"

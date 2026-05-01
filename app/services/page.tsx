@@ -124,8 +124,10 @@ export default function ServicesPage() {
       {/* Page Hero */}
       <section className="bg-[#FFF5F8] pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="section-subtitle">Our Services</p>
-          <h1 className="section-title text-5xl mb-5">
+          <p className="text-[#E91E63] text-xs font-semibold uppercase tracking-widest mb-2">
+            Our Services
+          </p>
+          <h1 className=" text-3xl md:text-4xl font-bold text-[#1A2B4A] leading-tight text-5xl mb-5">
             Compassionate Care, Tailored to You
           </h1>
           <p className="text-[#4A5568] max-w-2xl mx-auto text-lg leading-relaxed">
@@ -143,7 +145,7 @@ export default function ServicesPage() {
             {services.map(({ icon: Icon, title, desc, tags }) => (
               <div
                 key={title}
-                className="card group hover:-translate-y-1 transition-transform duration-300"
+                className="group cursor-pointer bg-white rounded-2xl p-6 border border-gray-100 hover:border-[#F48FB1] transition-all duration-300 shadow-[0_2px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_24px_rgba(233,30,99,0.10)]"
               >
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#FCE4EC] rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-[#E91E63] transition-colors">
@@ -176,13 +178,17 @@ export default function ServicesPage() {
       <section className="py-20 bg-[#FFF5F8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="section-subtitle">How It Works</p>
-            <h2 className="section-title mb-4">Getting Started is Simple</h2>
+            <p className="text-[#E91E63] text-xs font-semibold uppercase tracking-widest mb-2">
+              How It Works
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A2B4A] leading-tight mb-4">
+              Getting Started is Simple
+            </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {process.map(({ num, title, desc }, i) => (
               <div key={num} className="relative">
-                <div className="card text-center p-8">
+                <div className="cursor-pointer bg-white rounded-2xl p-6 border border-gray-100 hover:border-[#F48FB1] transition-all duration-300 shadow-[0_2px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_24px_rgba(233,30,99,0.10)] text-center">
                   <div className="w-14 h-14 bg-[#E91E63] rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <span className="text-white font-bold text-lg">{num}</span>
                   </div>
@@ -212,8 +218,8 @@ export default function ServicesPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:+17138001234"
-              className="btn-white flex items-center gap-2"
+              href="tel:+12817016053"
+              className="bg-white text-[#E91E63] px-7 py-3 rounded-full font-semibold text-sm tracking-wide hover:bg-[#FFF5F8] transition-all duration-200 shadow-md hover:shadow-lg active:scale-95 flex items-center gap-2"
             >
               <Phone className="w-4 h-4" />
               Call Now

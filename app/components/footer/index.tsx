@@ -11,10 +11,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 bg-[#E91E63] rounded-full flex items-center justify-center">
-                <Heart className="w-5 h-5 text-white" fill="white" />
-              </div>
+            <Link href="/" className="flex items-center gap-2 group">
+              <img
+                src="https://res.cloudinary.com/du153mzwk/image/upload/v1777548439/WhatsApp_Image_2026-04-28_at_8.38.27_PM_xsjajc.jpg"
+                alt="El-Shadia Logo"
+                className="w-10 h-10 rounded-full transition-transform duration-300 group-hover:scale-110"
+              />
               <div>
                 <span className="font-bold text-base block">El Shadai</span>
                 <span className="text-xs text-white/60 block">
@@ -27,27 +29,27 @@ export default function Footer() {
               over 10 years.
             </p>
             <div className="flex gap-3">
-              <a
-                href="#"
+              <Link
+                href="https://www.instagram.com/elshadihh1407/"
                 aria-label="Facebook"
                 className="w-9 h-9 bg-white/10 hover:bg-[#E91E63] rounded-full flex items-center justify-center transition-colors"
               >
                 <FaFacebook className="w-4 h-4" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 aria-label="Instagram"
                 className="w-9 h-9 bg-white/10 hover:bg-[#E91E63] rounded-full flex items-center justify-center transition-colors"
               >
                 <FaInstagram className="w-4 h-4" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 aria-label="Twitter"
                 className="w-9 h-9 bg-white/10 hover:bg-[#E91E63] rounded-full flex items-center justify-center transition-colors"
               >
                 <FaXTwitter className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -86,7 +88,7 @@ export default function Footer() {
                 "Skilled Nursing",
                 "Companion Care",
                 "Post-Hospital Care",
-                "Alzheimer's Care",
+                // "Alzheimer's Care",
                 "Respite Care",
               ].map((s) => (
                 <li key={s}>
@@ -110,12 +112,12 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-[#E91E63] mt-0.5 flex-shrink-0" />
                 <div>
-                  <a
-                    href="tel:+17138001234"
+                  <Link
+                    href="tel:+12817016053"
                     className="text-white text-sm font-semibold hover:text-[#F06292] transition-colors"
                   >
-                    (713) 800-1234
-                  </a>
+                    (281) 701-6053
+                  </Link>
                   <p className="text-white/50 text-xs">24/7 Available</p>
                 </div>
               </li>

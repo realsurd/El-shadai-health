@@ -100,8 +100,10 @@ export default function GalleryPage() {
       {/* Hero */}
       <section className="bg-[#FFF5F8] pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="section-subtitle">Photo Gallery</p>
-          <h1 className="section-title text-5xl mb-5">
+          <p className="text-[#E91E63] text-xs font-semibold uppercase tracking-widest mb-2">
+            Photo Gallery
+          </p>
+          <h1 className="text-3xl md:text-4xl font-bold text-[#1A2B4A] leading-tight text-5xl mb-5">
             See the Care We Provide
           </h1>
           <p className="text-[#4A5568] max-w-xl mx-auto text-lg">
@@ -210,8 +212,8 @@ export default function GalleryPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:+17138001234"
-              className="btn-white flex items-center gap-2"
+              href="tel:+12817016053"
+              className="bg-white text-[#E91E63] px-7 py-3 rounded-full font-semibold text-sm tracking-wide hover:bg-[#FFF5F8] transition-all duration-200 shadow-md hover:shadow-lg active:scale-95 flex items-center gap-2"
             >
               <Phone className="w-4 h-4" />
               Call Now
